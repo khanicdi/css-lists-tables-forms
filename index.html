@@ -6,11 +6,12 @@
   <meta name="description" content="Poetry Workshops">
   <meta name="author" content="Nhan">
   <link href="reset.css" type="text/css" rel="stylesheet">
-  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="main.css" type="text/css" rel="stylesheet">
   <title>Poetry Workshops</title>
 </head>
 
 <body>
+  <!-- main-heder includes header and introduction -->
   <div class="main-header">
     <header class="header" id="maincontent">
       <div class="header-inside">
@@ -19,9 +20,12 @@
     </header>
   </div>
   <div class="outside-header">
-    <p id="intro">We will be conducting a number of poetry workshops and symposiums throught out the year.</p>
+    <p id="intro">
+      We will be conducting a number of poetry workshops and symposiums throught out the year.
+    </p>
   </div>
-  <div class="content">
+  <div class="list-table">
+    <!-- List of free events -->
     <div class="list">
       <ul id="events">
         <p class="first-list-line"><span>Please note that the following events are free to members:</span></p>
@@ -30,35 +34,36 @@
         <li>Found Poems and Outsider Poetry</li>
       </ul>
     </div>
-    <div id="poetry-workshops-table">
+    <!-- Poetry Workshops table-->
+    <div id="poetryWorkshopsTable">
       <table>
         <tr class="supper-table-head">
           <td></td>
-          <th id="new-york" class="table-head" scope="col">New York</th>
+          <th id="newYork" class="table-head" scope="col">New York</th>
           <th id="chicago" class="table-head" scope="col">Chicago</th>
-          <th id="san-francisco" class="table-head" scope="col">San Francisco</th>
+          <th id="sanFrancisco" class="table-head" scope="col">San Francisco</th>
         </tr>
-        <tr class="odd">
-          <th id="poetic-perspective" class="table-head" scope="row">A Poetic Perspective</th>
-          <td>Sat, 4 Feb 2012 <span class="time">11am - 2pm</span></td>
+        <tr class="odd-row">  <!-- odd-row and even-row class to distingue rows -->
+          <th id="poeticPerspective" class="table-head" scope="row">A Poetic Perspective</th>
+          <td>Sat, 4 Feb 2012 <span class="time">11am - 2pm</span></td>   <!-- Use <span> element to split the time data on a new line in css later -->
           <td>Sat, 3 Mar 2012 <span class="time">11am - 2pm</span></td>
           <td>Sat, 17 Mar 2012 <span class="time">11am - 2pm</span></td>
         </tr>
-        <tr class="even">
-          <th id="walt-whitman" class="table-head" scope="row">Walt Whitman at War</th>
+        <tr class="even-row">
+          <th id="waltWhitman" class="table-head" scope="row">Walt Whitman at War</th>
           <td>Sat, 7 Apr 2012 <span class="time">11am - 1pm</span></td>
           <td>Sat, 5 May 2012 <span class="time">11am - 1pm</span></td>
           <td>Sat, 19 May 2012 <span class="time">11am - 1pm</span></td>
         </tr>
-        <tr class="odd">
-          <th id="found-poems-and-outsider-poetry" class="table-head" scope="row">Found Poems & Outsider Poetry
+        <tr class="odd-row">
+          <th id="foundPoemsAndOutsiderPoetry" class="table-head" scope="row">Found Poems & Outsider Poetry
           </th>
           <td>Sat, 9 Jun 2012 <span class="time">11am - 2pm</span></td>
           <td>Sat, 7 Jul 2012 <span class="time">11am - 2pm</span></td>
           <td>Sat, 21 Jul 2012 <span class="time">11am - 2pm</span></td>
         </tr>
-        <tr class="even">
-          <th id="natural-death" scope="row" class="table-head">Natural Death: An Exploration</td>
+        <tr class="even-row">
+          <th id="naturalDeath" scope="row" class="table-head">Natural Death: An Exploration</td>
           <td>Sat, 4 Aug 2012 <span class="time">11am - 4pm</span></td>
           <td>Sat, 8 Sep 2012 <span class="time">11am - 4pm</span></td>
           <td>Sat, 15 Sep 2012 <span class="time">11am - 4pm</span></td>
@@ -66,15 +71,24 @@
       </table>
     </div>
   </div>
+  <!-- Poetry Workshops register form-->
   <div class="register-form">
     <form action="example.com" method="get">
       <fieldset>
         <legend class="legend">
           Register your interest
         </legend>
-        <label for="name">Your name: <input class="align-right" id="name" type="text" name="name" required></label><br>
-        <label for="email">Your email: <input class="align-right" id="email" type="email" name="email" required></label>
-        <p>Your closet center:
+        <label for="name">
+          Your name:
+          <input class="align-right" id="name" type="text" name="name" required>
+        </label>
+        <br>
+        <label for="email">
+          Your email:
+          <input class="align-right" id="email" type="email" name="email" required>
+        </label>
+        <p>
+          Your closet center:
           <select class="align-right" id="center" name="center">
             <option disabled>Choose your closet center</option>
             <option value="new-york">New York</option>
@@ -82,11 +96,20 @@
             <option value="san-francisco">San Francisco</option>
           </select>
         </p>
-        <p>Are you a memeber?
-          <label class="question container align-right" for="yes">Yes<input type="radio" name="member" value="yes" id="yes"><span class="checkmark"></span></label>
-          <label class="question container align-right" for="no">No<input type="radio" name="member" value="no" id="no"><span class="checkmark"></span></label>
+        <p>
+          Are you a memeber?
+          <label class="question container align-right" for="yes">
+            Yes
+            <input type="radio" name="member" value="yes" id="yes"><span class="checkmark"></span>
+          </label>
+          <label class="question container align-right" for="no">
+            No
+            <input type="radio" name="member" value="no" id="no"><span class="checkmark"></span>
+          </label>
         </p>
-        <p class="submit"><input id="submit" type="submit" value="Send"></p>
+        <div class="submit">
+          <input id="submit" type="submit" value="Send">
+        </div>
       </fieldset>
     </form>
   </div>
