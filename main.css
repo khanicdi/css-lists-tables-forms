@@ -1,0 +1,271 @@
+html, body {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  line-height: 2em;
+  height: 100%;
+  color: #cdd3d6;
+  background-color: #100e17;
+}
+
+/*-------------- Styling for header class --------------*/
+.main-header {
+  /* Make gradient for image background */
+  background-image: 
+  radial-gradient(ellipse, rgba(15, 14, 22, 0.65), #100e17 ),
+  url(images/interfaces/background.jpg);
+  /* Set height and width for main-header */
+  height: 550px;
+  width: auto;
+  /* No repeat and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  padding-bottom: auto;
+  padding-left: 10%;
+  min-height: 500px;
+} 
+
+h1#headline {
+  margin-top: 200px;
+  position: absolute;
+  font-weight: bold;
+  font-size: 4em;
+  color: white;
+  line-height: 1.5em;
+}
+
+.outside-header {
+  background: radial-gradient(rgba(211, 84, 0,1.0), rgba(230, 126, 34,1.0));
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: -90px auto auto 0px;
+  padding: 20px 20px 20px 20px;
+  color: white;
+  border-radius: 0 30px 0 0;
+}
+
+/*-------------- Styling for the List --------------*/
+.list-table {
+  background-color: white;
+  color: black;
+  margin: 0px auto auto 0px;
+  padding: 10px 20px 100px 20px;
+  cursor: pointer;
+}
+
+.first-list-line {
+  color: black;
+  font-weight: bold;
+}
+
+ul#events {
+  list-style: none inside;
+  list-style-image: url(images/angry-solid.svg);
+}
+
+li {
+  margin-left: 20px;
+}
+
+th, td {
+  border: 2px solid black;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 50px;
+  max-height: 50px;
+  padding: 5px;
+}
+
+.time {
+  display: block;
+}
+
+/*-------------- Styling for the Table --------------*/
+#poetryWorkshopsTable {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.supper-table-head {
+  background-color: #e67e22;
+  color: black;
+  text-align: center
+}
+
+.table-head {
+  font-weight: bold;
+  text-align: center;
+}
+
+.odd {
+  background-color: #ecf0f1;
+}
+
+/*-------------- Styling for the Form --------------*/
+.register-form {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset{
+  background-color: #171420;
+  padding-top: 100px;
+  padding: 20px;
+  width: 600px;
+  line-height: 3em;
+  margin: 100px auto 100px auto;  
+  box-shadow: 20px 20px 10px #000;
+  border-radius: 10px;
+}
+
+.align-right {
+  float: right;
+}
+
+.legend {
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+input {
+  background-color: #100e17;
+  border-radius: 5px;
+  width: 50%;
+  color: white;
+  padding: 10px;
+}
+
+input:focus {
+  border: 3px solid #e67e22;
+  
+}
+
+select {
+  background-color: #100e17;
+  border-radius: 5px;
+  width: 50%;
+  color: white;
+  padding: 10px;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left:30px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.question {
+  padding: 0px 20px 0 20px;
+}
+
+.register-form {
+  color: white;
+}
+/* Style for submit */
+.submit {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#submit {
+  margin-top: 30px;
+  border-radius: 30px;
+}
+/* hover when the cursor on submit */
+#submit:hover {
+  border: 2px solid #e67e22;
+}
+
+select:focus {
+  border: 3px solid #e67e22;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
