@@ -17,5 +17,5 @@ Using browsers like Chrome, Firefox, etc. to open index.html file in repository 
 - [CSS Reset](https://github.com/khanicdi/css-lists-tables-forms/blob/lists-tables-forms/reset.css)
 - [CSS Style](https://github.com/khanicdi/css-lists-tables-forms/blob/lists-tables-forms/style.css)
 - [Images](https://github.com/khanicdi/css-lists-tables-forms/tree/lists-tables-forms/images)
-# Author
+## Author
 Dang Nhan
