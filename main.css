@@ -162,7 +162,7 @@ select {
   display: block;
   position: relative;
   padding-left: 30px;
-  padding-top: 20px;
+  padding-top: 30px;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -252,20 +252,3 @@ select:focus {
   border: 3px solid #e67e22;
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
